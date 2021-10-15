@@ -22,8 +22,8 @@ body {
 }
 header {
     color: var(--pri);
-    background-color: var(--sec2);
     box-shadow: 0px 0px 10px var(--sec);
+    background-color: var(--sec2);
     position: fixed;
     top: 0;
     height: 60px;
@@ -77,10 +77,27 @@ a{
 .main {
     flex: 1;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
 .left {
-    padding: 40px 64px 20px 64px;
+    padding: 40px 64px;
+    width: 50%;
+}
+.pic{
+    max-width:280px;
+    padding: 0px;
+    margin-top: 0px;
+}
+.btnContainer{
+    text-align: center;
+    margin-bottom:25px;
+}
+hr{
+    width: 86%;
+    opacity: 0.35;
+    margin-left: 7%;
+    border: 1px solid var(--sec);
+    z-index: -1;
 }
 .title {
     color: var(--pri);
@@ -90,7 +107,6 @@ a{
     letter-spacing: 1px;
     margin-bottom: 45px;
 }
-
 .msg {
     color: var(--pri);
     font-size: 1.1em;
@@ -159,6 +175,12 @@ button.cta:hover {
         max-width: 60%;
     }
 
+    .left *{
+        margin: 8px;
+    }
+    .pic{
+        margin: -55px 0 -5px 0;
+    }
     /* Nav Menu Responsiveness */
 
     .menu button {
