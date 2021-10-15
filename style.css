@@ -32,6 +32,7 @@ header {
     align-items: center;
     padding: 0 54px;
     font-size: 15px;
+    z-index: 10;
 }
 header h1 {
     font-size: 1.6em;
