@@ -1,0 +1,229 @@
+:root {
+    --pri: #E9FFF9;
+    --sec: #a61015;
+    --sec2: #D64045;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--sec2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+header {
+    color: var(--pri);
+    box-shadow: 0px 0px 10px var(--sec);
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 54px;
+    font-size: 15px;
+}
+header h1 {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+header h1:hover{
+    opacity: 0.9;
+}
+.menu {
+    display: flex;
+}
+.menu button {
+    display: none;
+    transition-duration: 0.3s;
+}
+.menu button:hover {
+    opacity: 0.8;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+.menu-list li {
+    display: inline-block;
+    margin-left: 32px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.menu-list li.active,
+.menu-list li:hover {
+    color: var(--pri);
+    font-weight: bold;
+    text-decoration: underline;
+}
+a{
+    color: var(--pri);
+    text-decoration: none;
+}
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.left {
+    padding: 40px 64px;
+}
+.title {
+    color: var(--pri);
+    font-size: 3.1em;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.msg {
+    color: var(--pri);
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 45px;
+}
+
+button.cta {
+    border: 2px dashed var(--sec);
+    outline: none;
+    background-color: var(--pri);
+    color: var(--sec);
+    font-size: 16px;
+    height: 60px;
+    width: 250px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #0003,
+    0 7px 10px #0003;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+button.cta:hover {
+    opacity: 0.8;
+}
+
+/*  -----    RESPONSIVENESS    -----  */
+
+@media (max-width:800px) {
+    header,
+    .left{
+        padding-left: 35px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        max-width: 100%;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        font-size: 0.8em;
+    }
+
+    .left * {
+        width: 95%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    button.cta {
+        max-width: 60%;
+    }
+
+    /* Nav Menu Responsiveness */
+
+    .menu button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        color: var(--pri);
+        outline: none;
+        font-size: 1.7em;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    /*menu btn on android*/
+    .menu i.fa-times,
+    .menu.opened i.fa-bars {
+        display: none;
+    }
+    .menu.opened i.fa-times,
+    .menu i.fa-bars {
+        display: block;
+        animation: enter 0.8s;
+    }
+
+
+    @keyframes enter {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu-list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #000b;
+        color: var(--pri);
+        padding: 46px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+
+    .menu-list li {
+        font-size: 1.7em;
+        margin: 32px 0px;
+    }
+
+    .menu.opened .menu-list {
+        transform: translateX(0);
+    }
+
+    .menu.opened button {
+        color: var(--pri);
+        position: fixed;
+        margin: -20px 0px 0px 0px;
+        right: 40px;
+    }
+}
