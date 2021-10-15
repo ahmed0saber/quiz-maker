@@ -79,7 +79,7 @@ a{
     align-items: center;
 }
 .left {
-    padding: 40px 64px 0px 64px;
+    padding: 40px 64px 20px 64px;
 }
 .title {
     color: var(--pri);
