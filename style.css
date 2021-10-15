@@ -45,6 +45,7 @@ header h1:hover{
 }
 .menu {
     display: flex;
+    background-color: var(--sec2);
 }
 .menu button {
     display: none;
