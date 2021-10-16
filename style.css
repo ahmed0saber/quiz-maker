@@ -161,11 +161,14 @@ button.cta:hover {
     .left{
         width: 100%;
         max-width: 100%;
-        padding: 28px;
+        padding: 28px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 0.8em;
+    }
+    .picCon{
+        padding: 0;
     }
     .left * {
         width: 95%;
@@ -177,7 +180,7 @@ button.cta:hover {
         max-width: 200px;
     }
     .pic{
-        margin: -65px 0 -15px 0;
+        margin: 0px 0px 10px 0px;
     }
     .mypic{
         max-width:200px;
