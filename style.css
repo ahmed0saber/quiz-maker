@@ -88,10 +88,11 @@ a{
     background-color: var(--sec);
     padding: 15px;
     border: 1px solid #0002;
-    box-shadow: 0px 0px 4px var(--sec);
-    border-radius: 5px;
+    box-shadow: 0px 0px 4px #000b;
+    border-radius: 6px;
     position: relative;
     z-index: -1;
+    background-image: radial-gradient(var(--sec2) 0%,var(--sec2) 10%,var(--sec) 80%,#0003 100%);
 }
 .quizL{
     float: left;
