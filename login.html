@@ -27,11 +27,11 @@
     </header>
     <section class="formCon">
         <section class="form">
-            <form method="post" action="myQuizzes.html">
+            <form> <!-- action and method -->
                 <p class="title">Log in</p>
                 <input type="text" name="email" placeholder="Email" class="txt">
                 <input type="password" name="password" placeholder="Password" class="txt">
-                <input type="submit" value="Log in" class="btn">
+                <a href="myQuizzes.html"><input type="button" value="Log in" class="btn"></a> <!-- type submit and no <a> tag -->
             </form>
             <p class="msg">Don't have account ?! <a href="signup.html">Create one</a></p>
         </section>
