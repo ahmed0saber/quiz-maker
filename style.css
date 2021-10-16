@@ -83,6 +83,9 @@ a{
     padding: 40px 64px;
     width: 50%;
 }
+.pic{
+    max-width:300px;
+}
 .mypic{
     max-width:280px;
     padding: 0px;
@@ -145,7 +148,7 @@ button.cta:hover {
         padding-left: 35px;
         padding-right: 40px;
     }
-    .pic{
+    .mypic{
         max-width:240px;
     }
 }
@@ -175,6 +178,8 @@ button.cta:hover {
     }
     .pic{
         margin: -65px 0 -15px 0;
+    }
+    .mypic{
         max-width:200px;
     }
 
