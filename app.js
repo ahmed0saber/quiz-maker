@@ -20,6 +20,22 @@ if(localStorage.getItem("index")<6 && localStorage.getItem("index")>0)
 
 var menu = document.querySelector('.menu');
 var menuBtn = document.querySelector('.menu button');
+var elements = document.getElementsByClassName('quiz');
+var opened = false;
 menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('opened')
+    menu.classList.toggle('opened');
+    if(opened){
+        for (var i in elements){
+            elements[i].style.transitionDuration = '1s';
+            elements[i].style.zIndex = 0;
+            opened = false;
+        }
+    }
+    else{
+        for (var i in elements){
+            elements[i].style.transitionDuration = '0s';
+            elements[i].style.zIndex = -1;
+            opened = true;
+        }
+    }
 });

@@ -194,6 +194,8 @@ button.cta:hover {
 }
 .quiz{
     width: 23%;
+    transition-duration: 0.4s;
+    pointer-events: none;
     text-align: center;
     margin:20px 1% 0 1%;
     float: left;
@@ -214,15 +216,16 @@ button.cta:hover {
     color: var(--pri);
     opacity: 0.7;
 }
-.quiz a{
+.quiz .link{
     display: inline-block;
+    pointer-events: auto;
     background-color: #0005;
     padding: 10px;
     width: 80%;
     border: 1px solid #0002;
     border-radius:10px;
 }
-.quiz a:hover{
+.quiz .link:hover{
     opacity: 0.85;
 }
 .quiz *{
@@ -251,9 +254,9 @@ button.cta:hover {
     }
     .quiz{
         width: 96%;
+        pointer-events: auto;
         text-align: left;
         margin:20px auto 0 auto;
-        z-index: -1;
     }
     .quizL{
         float: left;
@@ -263,7 +266,7 @@ button.cta:hover {
         right: 10px;
         top: calc(50% - 10px);
     }
-    .quiz a{
+    .quiz .link{
         display: none;
     }
 }
@@ -358,7 +361,7 @@ button.cta:hover {
         align-items: flex-end;
         padding-top: 80px;
         transform: translateX(100%);
-        transition: transform 0.5s;
+        transition: transform 0.4s;
         z-index: 1;
     }
 
