@@ -74,37 +74,10 @@ a{
     color: var(--pri);
     text-decoration: none;
 }
-.main , .quizCon {
+.main{
     flex: 1;
     display: flex;
     /*align-items: center;*/
-}
-.quizCon{
-    flex-direction: column;
-}
-.quiz{
-    width: 98%;
-    margin:20px auto 0 auto;
-    background-color: var(--sec);
-    padding: 15px;
-    border: 1px solid #0002;
-    box-shadow: 0px 0px 4px #000b;
-    border-radius: 6px;
-    position: relative;
-    z-index: -1;
-    background-image: radial-gradient(var(--sec2) 0%,var(--sec2) 10%,var(--sec) 80%,#0003 100%);
-}
-.quizL{
-    float: left;
-    font-size:30px;
-    color: var(--pri);
-}
-.quizR{
-    position: absolute;
-    right: 10px;
-    top: calc(50% - 10px);
-    color: var(--pri);
-    opacity: 0.7;
 }
 .left {
     padding: 40px 64px;
@@ -219,6 +192,42 @@ button.cta:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+.quiz{
+    width: 23%;
+    text-align: center;
+    margin:20px 1% 0 1%;
+    float: left;
+    background-color: var(--sec);
+    padding: 15px;
+    border: 1px solid #0002;
+    box-shadow: 0px 0px 4px #000b;
+    border-radius: 6px;
+    position: relative;
+    z-index: 0;
+    background-image: radial-gradient(var(--sec2) 0%,var(--sec2) 10%,var(--sec) 80%,#0003 100%);
+}
+.quizL{
+    font-size:30px;
+    color: var(--pri);
+}
+.quizR{
+    color: var(--pri);
+    opacity: 0.7;
+}
+.quiz a{
+    display: inline-block;
+    background-color: #0005;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #0002;
+    border-radius:10px;
+}
+.quiz a:hover{
+    opacity: 0.85;
+}
+.quiz *{
+    margin: 5px;
+}
 
 /*  -----    RESPONSIVENESS    -----  */
 
@@ -231,8 +240,31 @@ button.cta:hover {
     .mypic{
         max-width:240px;
     }
+    .quizCon{
+        flex: 1;
+        display: flex;
+        /*align-items: center;*/
+        flex-direction: column;
+    }
+    .quiz *{
+        margin: 0px;
+    }
     .quiz{
         width: 96%;
+        text-align: left;
+        margin:20px auto 0 auto;
+        z-index: -1;
+    }
+    .quizL{
+        float: left;
+    }
+    .quizR{
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 10px);
+    }
+    .quiz a{
+        display: none;
     }
 }
 
