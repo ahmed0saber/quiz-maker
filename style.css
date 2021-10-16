@@ -166,6 +166,59 @@ button.cta {
 button.cta:hover {
     opacity: 0.8;
 }
+.formCon{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.form{
+    width: 95%;
+    max-width: 600px;
+    border: 1px solid #0002;
+    box-shadow: 0px 0px 5px var(--sec);
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px auto 25px auto;
+}
+.form .title{
+    margin: 10px 0px 20px 0px;
+    font-size: 45px;
+    text-shadow: 0px 0px 5px #0009;
+    color: var(--pri);
+}
+.form .txt , .form .btn{
+    width: 85%;
+    margin: 0 0 20px 0;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #fffb;
+    box-shadow: inset 0px 0px 5px var(--sec);
+}
+.form .txt{
+    color: var(--sec);
+}
+.form .btn{
+    background-color: var(--sec);
+    color: var(--pri);
+}
+.form .btn:hover{
+    opacity: 0.85;
+}
+::placeholder{
+    font-size:20px;
+    color: #0005;
+}
+.form .msg{
+    margin: 0px 0px 20px 0px;
+}
+.form a{
+    color: var(--sec);
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /*  -----    RESPONSIVENESS    -----  */
 
@@ -269,6 +322,7 @@ button.cta:hover {
         padding-top: 80px;
         transform: translateX(100%);
         transition: transform 0.5s;
+        z-index: 1;
     }
 
     .menu-list li {

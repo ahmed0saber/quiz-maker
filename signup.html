@@ -4,16 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <title>Ask Bin</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .main {
-            align-items: center;
-        }
-        .left{
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -21,10 +13,10 @@
 
         <section class="menu">
             <ul class="menu-list">
-                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li onclick="theme()">Change theme</li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="login.html">My quizzes</a></li>
+                <li class="active"><a href="login.html">My quizzes</a></li>
             </ul>
 
             <button>
@@ -33,15 +25,20 @@
             </button>
         </section>
     </header>
-    <section class="main">
-
-        <section class="left">
-            <p class="title">Forms , Quizzes , Tests and much more...</p>
-            <p class="msg">Need a course registration form ? Want to make a friendship test to your friends ? Need to create an online quiz ? Want to get answers to your questions ?<br>=> then you are on the correct place.</p>
-            <button class="cta">Get Started</button>
+    <section class="formCon">
+        <section class="form">
+            <form method="post" action="myQuizzes.html">
+                <p class="title">Sign up</p>
+                <input type="text" name="name" placeholder="Username" class="txt">
+                <input type="text" name="email" placeholder="Email" class="txt">
+                <input type="password" name="pass" placeholder="Password" class="txt">
+                <input type="password" name="cpass" placeholder="Confirm Password" class="txt">
+                <input type="submit" value="Sign up" class="btn">
+            </form>
+            <p class="msg">Already have account ?! <a href="login.html">Log in</a></p>
         </section>
-
     </section>
+    
 
     <script src="app.js"></script>
 </body>
