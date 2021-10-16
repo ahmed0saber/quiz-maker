@@ -177,6 +177,9 @@ button.cta:hover {
     .mypic{
         max-width:240px;
     }
+    .quiz{
+        width: 96%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -210,6 +213,9 @@ button.cta:hover {
     }
     .mypic{
         max-width:200px;
+    }
+    .quiz{
+        width: 95%;
     }
 
     /* Nav Menu Responsiveness */
