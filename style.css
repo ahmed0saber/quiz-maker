@@ -215,7 +215,7 @@ button.cta:hover {
     margin: 0px 0px 20px 0px;
 }
 .form a{
-    color: var(--sec);
+    color: var(--pri);
     font-weight: bold;
     text-decoration: underline;
 }
