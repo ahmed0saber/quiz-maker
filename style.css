@@ -178,7 +178,7 @@ button.cta:hover {
     box-shadow: 0px 0px 5px var(--sec);
     border-radius: 5px;
     text-align: center;
-    margin: 25px auto 25px auto;
+    margin: 0px auto 10px auto;
 }
 .form .title{
     margin: 10px 0px 20px 0px;
