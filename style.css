@@ -81,7 +81,7 @@ a{
 }
 .left {
     padding: 40px 64px;
-    width: 50%;
+    width: 100%;
 }
 .pic{
     max-width:300px;
@@ -290,6 +290,11 @@ button.cta:hover {
         margin-bottom: 32px;
         text-align: center;
         margin: 8px;
+    }
+    .main .left i{
+        width: fit-content;
+        padding: 0;
+        margin: 0;
     }
     button.cta {
         max-width: 200px;
