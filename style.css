@@ -74,10 +74,36 @@ a{
     color: var(--pri);
     text-decoration: none;
 }
-.main {
+.main , .quizCon {
     flex: 1;
     display: flex;
     /*align-items: center;*/
+}
+.quizCon{
+    flex-direction: column;
+}
+.quiz{
+    width: 98%;
+    margin:20px auto 0 auto;
+    background-color: var(--sec);
+    padding: 15px;
+    border: 1px solid #0002;
+    box-shadow: 0px 0px 4px var(--sec);
+    border-radius: 5px;
+    position: relative;
+    z-index: -1;
+}
+.quizL{
+    float: left;
+    font-size:30px;
+    color: var(--pri);
+}
+.quizR{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10px);
+    color: var(--pri);
+    opacity: 0.7;
 }
 .left {
     padding: 40px 64px;
