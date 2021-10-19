@@ -167,18 +167,22 @@ button.cta:hover {
     border-radius: 5px;
     outline: none;
     border: none;
-    background-color: #fffb;
+    background-color: #fff0;
     box-shadow: inset 0px 0px 5px var(--sec);
 }
 .form .txt{
     color: var(--sec);
+    border: 1px solid #0002;
 }
 .form .btn{
     background-color: var(--sec);
     color: var(--pri);
+    box-shadow: 0px 0px 5px var(--sec);
+    border: 1px solid #0001;
+    transition-duration: 0.25s;
 }
 .form .btn:hover{
-    opacity: 0.85;
+    background-color: var(--sec2);
 }
 ::placeholder{
     font-size:20px;
@@ -273,6 +277,12 @@ button.cta:hover {
     box-shadow: 0px 0px 4px #000d;
     border-radius: 5px;
     z-index: -1;
+}
+.questioned{
+    text-align: left;
+    margin: 5px 0px 1px 8%;
+    color: var(--pri);
+    text-shadow: 0px 0px 5px #0009;
 }
 
 /*  -----    RESPONSIVENESS    -----  */
