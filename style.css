@@ -260,7 +260,7 @@ button.cta:hover {
 }
 .qa2{
     border-radius: 0px;
-    margin: 20px;
+    margin: 10px;
 }
 .answer{
     width: 23%;
@@ -363,8 +363,8 @@ button.cta:hover {
         width: 95%;
     }
     .answer{
-        width: 96%;
-        margin: 10px 2%;
+        width: 92%;
+        margin: 10px 4%;
     }
 
     /* Nav Menu Responsiveness */
