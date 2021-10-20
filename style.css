@@ -173,6 +173,10 @@ button.cta:hover {
 .form .txt{
     color: var(--sec);
     border: 1px solid #0002;
+    transition-duration: 0.4s;
+}
+.form .txt:focus{
+    color: var(--pri);
 }
 .form .btn{
     background-color: var(--sec);

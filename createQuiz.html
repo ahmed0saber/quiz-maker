@@ -25,7 +25,20 @@
             </button>
         </section>
     </header><br>
-    <p class="des">Creating a Quiz , <a href="quizInv.html">Try a created one</a></p>
+    <section class="formCon">
+        <section class="form">
+            <form> <!-- action and method -->
+                <div id="questionsContainer">
+                    <p class="questioned">Enter the form name</p>
+                    <input type="text" name="quizName" placeholder="Form Name" class="txt">
+                    <p class="questioned">Enter question number 1</p>
+                    <input type="text" name="q1" placeholder="Question 1" class="txt">
+                </div>
+                <input type="button" value="Add Question" class="btn" onclick="addQuestion()">
+                <input type="button" value="Submit" class="btn">
+            </form>
+        </section>
+    </section>
 
     <script src="app.js"></script>
 </body>

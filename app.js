@@ -18,6 +18,7 @@ if(localStorage.getItem("index")<6 && localStorage.getItem("index")>0)
     theme();
 }
 
+
 var menu = document.querySelector('.menu');
 var menuBtn = document.querySelector('.menu button');
 var elements = document.getElementsByClassName('quiz');
@@ -39,3 +40,15 @@ menuBtn.addEventListener('click', () => {
         }
     }
 });
+
+
+var questionNumber=2;
+function addQuestion(){
+    if(questionNumber<=10){
+        document.getElementById("questionsContainer").innerHTML+=`<p class="questioned">Enter question number ${questionNumber}</p>
+        <input type="text" name="q${questionNumber}" placeholder="Question ${questionNumber}" class="txt">`;
+        questionNumber++;
+    }else{
+        alert("Max number of questions reached");
+    }
+}
